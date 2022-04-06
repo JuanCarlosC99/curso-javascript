@@ -7,7 +7,58 @@
     <title>Figuras geometricas</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
-    <script src="./figuras.js"></script>
+    <header>
+        <h1>
+            Figuras geometricas
+        </h1>
+        <p>Primera parte del curso JS</p>
+    </header>
+    <section>
+        <h2>Calcular el area y perimetro de un cuadrado</h2>
+        <form >
+            <label for="InputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado
+            </label>
+            <input id="InputCuadrado" type="number"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el area
+            </button >
+        </form>
+    </section>
+    <section>
+        <h2>Calcular el area y perimetro de un Triangulo</h2>
+        <form >
+            <label for="InputCuadrado">
+                Escribe cuanto mide cada lado del triangulo
+            </label>
+            <input id="InputTrianguloLado1" type="number"/>
+            <input id="InputTrianguloLado2" type="number"/>
+            <input id="InputTrianguloLadoBase" type="number"/>
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular el area
+            </button >
+        </form>
+    </section>
+    <section>
+        <h2>Calcular el area y perimetro de un Circulo</h2>
+        <form >
+            <label for="InputCuadrado">
+                Escribe cuanto mide cada lado del Circulo
+            </label>
+            <input id="InputCuadrado" type="number"/>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el area
+            </button >
+        </form>
+        <script src="./figuras.js"></script>
 </body>
 </html>
