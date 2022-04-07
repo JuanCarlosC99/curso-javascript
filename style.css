@@ -1,0 +1,29 @@
+form {
+    background-color: brown;
+    border: 10px rgb(58, 56, 55);
+    border-style: double;
+    
+    width: 350px;;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+input{
+    border-radius: 10%;
+   
+    right: 0;
+}
+label + input{
+    background-color: rgb(138, 181, 181);
+    
+}
+label{
+    background-color: rgb(187, 185, 189);
+    border-radius: 20%;
+    text-align: center;
+    font-family: cursive;
+}
+*{
+    align-items: center;
+}
