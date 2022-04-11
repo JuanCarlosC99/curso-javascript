@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styledes.css">
     <title>Porcentajes y descuentos | curso</title>
 </head>
 <body>
     <header>
-        <h1>
+        <h1 class="h1">
             Porcentajes y descuentos 
         </h1>
     </header>
-        <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-            <form >
-            <label for="Inputprice">Escribe el precio del producto: </label>
-            <input id="InputPrice"type="number" />
-            <label for="InputDiscount">Escribe el descuento :</label>
-            <input id="InputDiscount" type="number" />
-            <button type="button" onclick="pricediscount()">Calcular el porecio con descuento</button>
-            <p id="ResultP"></p>
+        <section class="section">
+        <h2 class="h2">Calcula el precio a pagar de tus productos con descuento</h2>
+        <section class="section2">
+        <img class="img" src="https://c.tenor.com/H8GIPCq-hFAAAAAC/nick-wilde-zootopia.gif" alt="">
+        <form class="form">
+            <label for="Inputprice" class="label">Escribe el precio del producto: </label>
+            <input id="InputPrice" class="input" type="number" />
+            <label for="InputCoupon" class="label">Escribe el descuento :</label>
+            <input id="InputCoupon" class="input" type="text" />
+            <button type="button" class="button" onclick="pricediscount()">Calcular el porecio con descuento</button>
+            <p id="tdicount" class="p"></p>
+            <p id="ResultP" class="p"></p>
         </form>
+        <img class="img" src="https://c.tenor.com/H8GIPCq-hFAAAAAC/nick-wilde-zootopia.gif" alt="">
     </section>
+</section>
     <script src="./decuentos.js"></script>
 </body>
 </html>
