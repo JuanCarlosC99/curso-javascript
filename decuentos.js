@@ -34,19 +34,27 @@ function calcularPrecioConDescuento(precio,descuento){
     const precioConDescuento=(precio*porcentajePrecioConDescuento)/100;
     return precioConDescuento;
 }
-function pricediscount(){
-    const inputPrice=document.getElementById("InputPrice").value;
-    const couponValue=document.getElementById("InputCoupon").value;
-   
-    const  isCouponValueValid = function(coupons){
-        return coupons.name===couponValue;
-    }
-    const userCoupon= coupons.find(isCouponValueValid);
 
-    if(!userCoupon){
-        document.getElementById("tdicount").innerText="Tu descuento no es valido";
+function priceDiscount(){
+    const inputPrice=document.getElementById("InputPrice").value;
+    const inputDiscount=document.getElementById("InputDiscount").value|0;
+    const inputCoupon=document.getElementById("InputCoupon").value;
+    var priceDiscount =0;
+    if(!inputCoupon==""){
+        const  isCouponValueValid = function(coupons){
+            return coupons.name===inputCoupon;
+        }
+        const userCoupon= coupons.find(isCouponValueValid);
+        if(!userCoupon){
+            document.getElementById("tdicount").innerText="Tu descuento no es valido";
+        }
+        priceDiscount=userCoupon.discount+inputDiscount;
+        document.getElementById("tdicount").innerText="Tu descuento es de "+inputDiscount+"% cupon"+userCoupon.discount+"%";
+    }else{
+        priceDiscount=inputDiscount;
+        document.getElementById("tdicount").innerText="Tu descuento es de "+inputDiscount;
     }
-    const priceDiscount=calcularPrecioConDescuento(inputPrice,userCoupon.discount);
-    document.getElementById("tdicount").innerText="Tu descuento es de "+userCoupon.discount+"%";
-    document.getElementById("ResultP").innerText="El Precio Con Descuento Son: "+priceDiscount;
+
+    const priceDiscountR=calcularPrecioConDescuento(inputPrice,priceDiscount);
+    document.getElementById("ResultP").innerText="El Precio Con Descuento Son: "+priceDiscountR;
 }   

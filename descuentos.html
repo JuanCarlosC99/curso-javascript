@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styledes.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+
     <title>Porcentajes y descuentos | curso</title>
 </head>
 <body>
@@ -20,9 +22,12 @@
         <form class="form">
             <label for="Inputprice" class="label">Escribe el precio del producto: </label>
             <input id="InputPrice" class="input" type="number" />
-            <label for="InputCoupon" class="label">Escribe el descuento :</label>
+            <label for="InputDiscount" class="label">Escribe el descuento :</label>
+            <input id="InputDiscount" class="input" type="number" />
+            <label for="InputCoupon" class="label">Escribe el cupon :</label>
             <input id="InputCoupon" class="input" type="text" />
-            <button type="button" class="button" onclick="pricediscount()">Calcular el porecio con descuento</button>
+            
+            <button type="button" class="button" onclick="priceDiscount()">Calcular precio</button>
             <p id="tdicount" class="p"></p>
             <p id="ResultP" class="p"></p>
         </form>
