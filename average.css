@@ -1,10 +1,10 @@
 :root{
     
-    --form:    rgba(118, 114, 122, 0.876);
+    --form:    rgb(165, 67, 38);
     --label:   rgb(0, 0, 0);
     --input:   gray;
-    --h1:      rgb(212, 24, 24);
-    --h2:      darkgray; 
+    --h1:      rgb(241, 238, 237);
+    --h2:      rgb(0, 0, 0); 
     --section: rgb(0, 0, 0);
     --button:  rgb(0, 0, 0);
     --button_text: rgb(173, 194, 161);
@@ -20,6 +20,7 @@ html{
     color: var(--h1);
     font-family: cursive;
     text-align: center;
+    margin-bottom: 3%;
 }
 .h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,17 +29,16 @@ html{
     margin: 0;
     margin-top: 2%;
     margin-bottom:1%;
+    text-align: center;
 }
+
 .section{
-    
+    width: 100%;
+    height: 100%;
     border-radius: 10%;
     display: flex;
-    background: var(--section);
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 10%;
-    
+    justify-content: center;       
+    /* background: var(--section); */    
  }
  .section2{
     border-radius: 10%;
@@ -49,13 +49,14 @@ html{
  }
 
 .form{
+    width: auto;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
     background-color: var(--form);   
-    /* align-items: center; */
-    gap: 1%;
+    gap: 10%;
     padding: 1%;
+    border: 10px solid ;
     
 }
 .label{
@@ -77,22 +78,35 @@ html{
     color: var(--input_text);
 }
 .p{
-    font-size: 150%;
-    justify-content: center;
-    margin: 1%;
+    font-size: 120%;    
+    margin: 0px;
     color: var(--p);
-    text-align: center;
+    /* text-align: center; */
 }
 .button{
     margin: 1%;
     font-size: 150%;
     border: 10 solid;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: var(--button);
     color: var(--button_text);
     
 }
+.textarea{
+    width: auto;
+    /* min-width: 1em;
+    grid-area: 1 / 2; */
+    /* font: inherit; */
+    font-size: 120%;
+    padding: 0.25em;
+    margin: 0;
+    resize: none;
+    background: none;
+    appearance: none;
+    border: none;
+}
 .img{
-    width: 55%;
+    width: 35%;
     border-radius: 10%;
+    
 }
